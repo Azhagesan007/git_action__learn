@@ -1,0 +1,11 @@
+name: My First Action
+on: push
+jobs:
+    my_first_action:
+        name: My First Action
+        runs-on: ubuntu-latest
+        steps:
+            - name: test my workflow
+              run: |
+                npm install
+                npm run test
